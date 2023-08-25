@@ -69,3 +69,21 @@
   height: 50px;
   background-color: #AAA;
 }
+
+/*レスポンシブ対応*/
+@media screen and (max-width:768px) {
+  .flow-items {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .flow-item {
+    width: 90%;
+    margin-right: 0 !important;
+  }
+
+  .flow-item:not(:last-child) {
+    margin-bottom: 20px;
+  }
+}
